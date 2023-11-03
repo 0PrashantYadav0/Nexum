@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Montesrrat',sans-serif;
+        font-weight: 500;
+        
+      }
+      a{
+        text-decoration: none;
+        color: blue;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+      .small{
+        font-size: 80%;
+        text-align: center;
+      }
+      .split-screen{
+        display: flex;
+        flex-direction: column;
+      }
+     
+      .overlay,.right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .right .copy{
+        color: black;
+        text-align: center;
+      }
+     
+      #email {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid #c4c4c4;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        background-color: rgb(128, 128, 128,0.1);
+      }
+      #fname{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid #c4c4c4;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        background-color: rgb(128, 128, 128,0.1);
+      }
+      #Password{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid #c4c4c4;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        background-color: rgb(128, 128, 128,0.1);
+      
+      }
+      #Confirm{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid #c4c4c4;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        background-color: rgb(128, 128, 128,0.1);
+      
+      }
+      label{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+      .signinbtn{
+        color: #fff;
+        background-color: #ff4b2b;
+        font-size: 12px;
+        font-weight: bold;
+        padding : 12px 55px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid #ff4b2b;
+        outline: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+
+      }
+
+     
+      @media screen and (min-width: 900px){
+        .split-screen{
+            flex-direction: row;
+            height: 100vh;
+
+        }
+        .overlay{
+            display: flex;
+            width: 50%;
+            height: auto;
+
+        }.right{
+            display: flex;
+            width: 50%;
+            height: auto;
+        
+      }
+    }
+      
+      
+      .socialcontainer{
+        display: flex;
+        justify-content: center;
+          
+      }
+      .social{
+        margin: 10px;
+        background-color: grey;
+        border-radius: 10px;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -20px;
+      }
+     .overlay-left{
+        text-align: center;
+     }
+     .overlay{
+        color: #fff;
+        background: #ff416c;
+        background: linear;
+        background: linear-gradient(to right, #ff4b28, #ff228c);
+     }
+     #signin{
+        color: #fff;
+        background: #ff416c;
+        background: linear;
+        background: linear-gradient(to right, #ff4b28, #ff228c);
+        font-size: 12px;
+        font-weight: bold;
+        padding : 12px 55px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid  white;
+        outline: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+     }
+     .account{
+        text-align: center;
+        margin-bottom: 20px;
+     }
+    </style>
+    
+</head>
+<body>
+     
+       <div class="split-screen">
+        
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2 style="font-size: xx-large; font-weight: bold;">Sign in</h2>
+                </section>
+                <div class="socialcontainer">
+                     <a href="https://www.facebook.com/profile.php?id=100088391104322" class="social"><i class="fab fa-facebook"></i></a>
+                     <a href="https://www.google.co.in/" class="social"><i class="fab fa-google"></i></a>
+                     <a href="https://www.linkedin.com/in/dishant-garg-6029061a3/" class="social"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <section class="account">
+                    <span>or use your account</span>
+                </section>
+                
+                <div class="input email">
+                    <label for="email">Email ID</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="input password">
+                    <label for="Password">Password</label>
+                    <input id="Password" name="password" type="password" placeholder="type your password">
+                     
+                </div>
+                
+                <section class="copy legal">
+                    <p><span class="small">Forget your password?</span></p>
+                </section>
+                <button class="signinbtn" type="submit">Sign In</button>
+               
+            </form>
+        </div>
+            <div class="overlay">
+                <div class="both">
+                <div class="overlay-left">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="signin">Sign In</button>
+                </div>
+                </div>
+               
+            </div>
+        
+       </div>
+    
+</body>
+</html>
