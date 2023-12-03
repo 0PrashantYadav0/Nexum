@@ -1,0 +1,222 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+#main-content {
+    margin-left: 130px;
+    padding: 70px 15px 15px;
+}
+
+.vertical-navbar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+    background: linear-gradient(rgb(251, 34, 34), rgb(255, 196, 196), rgb(28, 26, 26));
+}
+
+.vertical-navbar .navbar-brand {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.vertical-navbar a {
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s;
+
+}
+
+.vertical-navbar a:hover {
+    background-color: #a03c3cac;
+}
+
+.vertical-navbar a.active {
+    background-color: #b20e0efd;
+    color: whitesmoke;
+}
+
+.horizontal-navbar {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    color: #333;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+
+.search-bar {
+    flex-grow: 0.5;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    border-radius: 50%;
+    background-color: #ccc;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.search-icon img {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-icon {
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.big-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 -10px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    background-size: contain;
+    object-fit: contain;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.transparent-card {
+    background-color: rgba(252, 168, 147, 0.978);
+    border-radius: 10px;
+    margin-top: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 -10px;
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+
+.transparent-card .card-body {
+    padding: 20px;
+    margin-left: 120px;
+}
+
+.profile-picture {
+    width: 150px;
+    /* Adjust the width of the profile picture */
+    height: 150px;
+    /* Adjust the height of the profile picture */
+    margin-right: 30px;
+    /* Add spacing between the picture and profile info */
+    overflow: hidden;
+    /* Hide any parts of the image outside the circle */
+    border-radius: 50%;
+    /* Make the container circular */
+}
+
+.profile-picture img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: 100%;
+    /* Make the image fill the container */
+    object-fit: cover;
+    /* Maintain the aspect ratio and fill the container */
+}
+
+.in-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white background */
+    border-radius: 10px;
+    /* Adjust border-radius as needed */
+    /* Overlapping the bottom edge of the big card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow for a subtle lift */
+    /* 10px margin on the right, creating a gap from the big card */
+    margin-bottom: -50%;
+    position: relative;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+h1 {
+    margin-left: 40%;
+    margin-top: -50px;
+}
+
+.small-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    height: 200px;
+    background-color: rgb(19, 22, 24);
+    background: linear-gradient(rgb(19, 22, 24), rgb(88, 65, 101));
+    color: rgb(221, 236, 243);
+    cursor: pointer;
+}
+
+.small-card :hover{
+    scale: 1.1;
+}
+
+.small-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.small-card-body .value {
+    margin-top: 10px;
+}
