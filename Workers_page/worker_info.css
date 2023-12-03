@@ -1,0 +1,52 @@
+
+        .abc{
+            background-color: #116466; 
+        }
+
+        .card{
+            background-color: #000000;
+        }
+        .card:hover {
+            background-color: #454545;
+            color: #ceffe8;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+            transform: scale(1.05); 
+            .btn-primary{
+                background-color: #116466;
+            }
+            .btn-primary:hover{
+                background-color: #00305f;
+            }
+        }
+
+        .btn-primary {
+            background-color: #116466; 
+            border-color: #f9f9f9;
+        }
+
+        .btn-primary:hover {
+            background-color: #0a6062; 
+            border-color: #000000;
+        }
+
+        .info-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .info-dropdown-content {
+        color: #000000;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .info-dropdown:hover .info-dropdown-content {
+            display: block;
+        }
