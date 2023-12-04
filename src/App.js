@@ -7,6 +7,7 @@ import DisplayUserData from './components/DisplayUserData';
 import AddNewUser from './components/AddNewUser';
 import AboutUs from './components/AboutUs';
 import Login from './components/Login';
+import Dashboard from './components/Dashboard';
 import Contactus from './components/Contactus';
 import './App.css'
 
@@ -40,6 +41,7 @@ function App() {
           />
           <Route path="/home" component={Home} />
           <Route path="/freelancing" component={Freelancers} />
+          <Route path="/dashboard" component={Dashboard} />
           <Route path="/add-new-user" component={AddNewUser} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/display-user-data" component={DisplayUserData} />
