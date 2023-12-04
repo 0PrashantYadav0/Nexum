@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background: linear-gradient(rgb(251, 34, 34), rgb(255, 196, 196), rgb(28, 26, 26));
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 14px;
+  padding-left: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  background-color: #68b6ea; /* Darker blue on hover */
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.search-container button {
+  padding: 10px;
+  background: linear-gradient(to right, #5a5a93, #3a3a61); /* Updated gradient colors */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar {
+  background-color: #fff;
+  padding-top: 10vh;
+}
+
+#main-content {
+  margin-left: 130px;
+  padding: 70px 15px 15px;
+}
+
+.vertical-navbar {
+  z-index: 4;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  padding-top: 20px;
+  border-right: 1px solid #ddd;
+  background: linear-gradient(rgb(251, 34, 34), rgb(255, 196, 196), rgb(28, 26, 26));
+}
+
+.vertical-navbar .navbar-brand {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.vertical-navbar a {
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: background-color 0.3s;
+
+}
+
+.vertical-navbar a:hover {
+  background-color: #a03c3cac;
+}
+
+.vertical-navbar a.active {
+  background-color: #b20e0efd;
+  color: whitesmoke;
+}
+
+.horizontal-navbar {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  color: #333;
+  font-size: 1.5rem;
+  margin-left: 12px;
+  margin-top: -5px;
+}
