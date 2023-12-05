@@ -152,35 +152,22 @@ body {
 
 .profile-picture {
   width: 150px;
-  /* Adjust the width of the profile picture */
   height: 150px;
-  /* Adjust the height of the profile picture */
   margin-right: 30px;
-  /* Add spacing between the picture and profile info */
   overflow: hidden;
-  /* Hide any parts of the image outside the circle */
   border-radius: 50%;
-  /* Make the container circular */
 }
 
 .profile-picture img {
   width: 100%;
-  /* Make the image fill the container */
   height: 100%;
-  /* Make the image fill the container */
   object-fit: cover;
-  /* Maintain the aspect ratio and fill the container */
 }
 
 .in-card {
   background-color: rgba(255, 255, 255, 0.9);
-  /* Slightly transparent white background */
   border-radius: 10px;
-  /* Adjust border-radius as needed */
-  /* Overlapping the bottom edge of the big card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Box shadow for a subtle lift */
-  /* 10px margin on the right, creating a gap from the big card */
   margin-bottom: -50%;
   position: relative;
   z-index: 2;

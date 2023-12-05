@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import './Dashborad.css'
 
-const Freelancers = () => {
+const Dashboard = () => {
   return (
     <>
       <Navbar dashboard={"active"}/>
@@ -140,4 +140,4 @@ const Freelancers = () => {
   );
 };
 
-export default Freelancers;
+export default Dashboard;
